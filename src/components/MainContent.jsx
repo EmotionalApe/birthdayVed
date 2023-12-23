@@ -2,11 +2,12 @@ import React from 'react'
 import Letter from './Letter'
 import { useState } from 'react';
 import '../App.css'
-import hogwarts from '../assets/hogwarts.png'
 import herm from '../assets/herm.png'
 import harry from '../assets/harry.png'
 import ron from '../assets/ron.png'
 import house from '../assets/houses.png'
+
+import './MainContent.css'
 
 const MainContent = () => {
 
@@ -36,23 +37,22 @@ const MainContent = () => {
     }
 
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center bg-[#001f3f]'>
 
             {isModalOpen ? (
                 <div className=''>
                     <Letter isOpen={isModalOpen} onRequestClose={closeModal} />
 
-                    <button className='bg-red-700 text-white bottom-10 fixed p-3' onClick={closeModal}>Close</button>
+                    <button className='bg-red-700 text-white bottom-10 fixed p-3 rounded-lg' onClick={closeModal}>Close</button>
                 </div>
-            ) : <div className='w-screen h-screen text-3xl text-white flex flex-col items-center' style={{ fontFamily: 'HarryP_' }}>
+            ) : <div className='w-screen text-3xl text-white flex flex-col items-center mb-9' style={{ fontFamily: 'HarryP_' }}>
                 <div>
                     <img className='w-[600px] h-[300px]' src={house} alt='houses' />
                 </div>
 
-                <div className='lg:flex'>
-                    <div className='lg:text-black sm:text-red-400 md:text-blue-400'>hi</div>
+                <div className='studentPhotos'>
                     <img className='w-[180px] h-[200px] mr-10' src={harry} alt='harry' />
-                    <img className='w-[200px] h-[200px]' src={herm} alt='hermione' />
+                    <img className='lg:w-[200px] h-[200px]' src={herm} alt='hermione' />
                     <img className='w-[200px] h-[200px] ml-10' src={ron} alt='ron' />
                 </div>
 
@@ -129,13 +129,13 @@ const MainContent = () => {
                 </div>
 
                 <div>
-                    <button onClick={handleLetterDownload}>
-                        Download Acceptance Letter
+                    <button onClick={handleLetterDownload} className='bg-green-900 p-2 rounded-lg mb-3'>
+                        <div className='text-yellow-300'>Download Acceptance Letter</div>
                     </button>
                 </div>
                 <div>
-                    <button onClick={handlePoemDownload}>
-                        Download Poem
+                    <button onClick={handlePoemDownload} className='bg-green-900 p-2 rounded-lg'>
+                        <div className='text-yellow-300'>Download Poem</div>
                     </button>
                 </div>
             </div>}

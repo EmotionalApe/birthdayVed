@@ -8,7 +8,8 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handlePasswordSubmit = () => {
-    if (password === 'codechef') {
+    const lowercasePassword = password.toLowerCase();
+    if (lowercasePassword === 'asmita') {
       setIsAuthenticated(true);
     } else {
       alert('Incorrect password. Please try again.');
@@ -16,9 +17,9 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className=''>
       {!isAuthenticated ? (
-        <div className='flex flex-col items-center h-screen w-screen justify-center bg-[#001f3f] text-white space-y-3'>
+        <div className='flex flex-col items-center min-h-screen w-screen justify-center bg-[#001f3f] text-white space-y-3'>
 
           <img className='w-[300px] h-[300px]' src={hogwarts} alt="oranges" />
 
@@ -37,10 +38,10 @@ const App = () => {
           </div>
 
           <button className='bg-yellow-300 text-red-800 font-bold p-4 rounded-lg text-lg italic'
-            onClick={handlePasswordSubmit}>Submit</button>
+            onClick={handlePasswordSubmit} type='submit'>Submit</button>
         </div>
       ) : (
-        <div className='bg-[#001f3f] h-[2000px]'> <MainContent /></div>
+        <MainContent />
 
       )}
     </div>

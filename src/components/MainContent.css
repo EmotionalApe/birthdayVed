@@ -1,0 +1,10 @@
+.studentPhotos {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .studentPhotos {
+      display: flex;
+      flex-direction: column;
+    }
+  }
