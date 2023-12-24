@@ -2,9 +2,25 @@
     display: flex;
 }
 
+.houses {
+  width: 600px;
+  height: 300px;
+}
+
+.studImg{
+  width: 200px;
+  height: 200px;
+}
+
 @media (max-width: 600px) {
-    .studentPhotos {
-      display: flex;
-      flex-direction: column;
+
+    .studImg{
+      width: 110px;
+      height: 110px;
+    }
+
+    .houses {
+      width: 400px;
+      height: 200px;
     }
   }

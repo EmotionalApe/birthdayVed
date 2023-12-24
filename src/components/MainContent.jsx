@@ -20,7 +20,7 @@ const MainContent = () => {
 
     const handleLetterDownload = () => {
         const link = document.createElement('a');
-        link.href = 'https://i.imgur.com/iFflRpD.jpg';
+        link.href = 'https://i.imgur.com/paUtqu5.jpg';
         link.download = 'hogwartsLetter.jpg';
         document.body.appendChild(link);
         link.click();
@@ -29,7 +29,7 @@ const MainContent = () => {
 
     const handlePoemDownload = () => {
         const link = document.createElement('a');
-        link.href = 'https://i.imgur.com/Mr0QXja.jpg';
+        link.href = 'https://i.imgur.com/JAvhVdr.jpg';
         link.download = 'hogwartsLetter.jpg';
         document.body.appendChild(link);
         link.click();
@@ -47,13 +47,13 @@ const MainContent = () => {
                 </div>
             ) : <div className='w-screen text-3xl text-white flex flex-col items-center mb-9' style={{ fontFamily: 'HarryP_' }}>
                 <div>
-                    <img className='w-[600px] h-[300px]' src={house} alt='houses' />
+                    <img className='houses' src={house} alt='houses' />
                 </div>
 
-                <div className='studentPhotos'>
-                    <img className='w-[180px] h-[200px] mr-10' src={harry} alt='harry' />
-                    <img className='lg:w-[200px] h-[200px]' src={herm} alt='hermione' />
-                    <img className='w-[200px] h-[200px] ml-10' src={ron} alt='ron' />
+                <div className='studentPhotos mt-10'>
+                    <img className='studImg' src={harry} alt='harry' />
+                    <img className='studImg' src={herm} alt='hermione' />
+                    <img className='studImg' src={ron} alt='ron' />
                 </div>
 
                 <div className='flex flex-row items-center'>
@@ -66,7 +66,7 @@ const MainContent = () => {
 
                         <div>
                             <div>That evening in the college I told you I liked you,</div>
-                            <div>Seeing you so happy, it felt as if in the heavens i flew.</div>
+                            <div>Seeing you so happy, it felt as if in the heavens I flew.</div>
                         </div>
 
                         <div>
@@ -91,7 +91,7 @@ const MainContent = () => {
 
                         <div>
                             <div>Just couldn't look at you as a friend, </div>
-                            <div>I did have feelings for you, I couldn't pretend.</div>
+                            <div>I did have feelings for you, couldn't pretend.</div>
                         </div>
 
                         <div>
@@ -101,7 +101,7 @@ const MainContent = () => {
 
                         <div>
                             <div>Your sister, Suhas, your dad, and the baby,</div>
-                            <div>I took a lot of learnings from and I respect dearly.</div>
+                            <div>I took a lot of learnings from and respect dearly.</div>
                         </div>
 
                         <div>
@@ -121,7 +121,7 @@ const MainContent = () => {
 
                         <div>
                             <div>Lastly wishing you a very very happy birthday,</div>
-                            <div>Have your success and joy have everything outweigh!❤️</div>
+                            <div>Your success and joy have everything outweigh!❤️</div>
                         </div>
 
                     </div>
