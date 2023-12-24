@@ -9,7 +9,7 @@ const App = () => {
 
   const handlePasswordSubmit = () => {
     const lowercasePassword = password.toLowerCase();
-    if (lowercasePassword === 'asmita') {
+    if (lowercasePassword === 'asmitabhat30') {
       setIsAuthenticated(true);
     } else {
       alert('Incorrect password. Please try again.');
